@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Hunt: Showdown Challenge Wheel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <main class="container">
+
+        <header>
+            <h1>HUNT: SHOWDOWN</h1>
+            <p class="subtitle">CHALLENGE WHEEL</p>
+        </header>
+
+        <section class="wheel-section">
+
+            <div class="wheel-container">
+                <div class="wheel-pointer"></div>
+
+                <canvas
+                    id="wheel"
+                    width="500"
+                    height="500">
+                </canvas>
+            </div>
+
+            <button id="spinButton">
+                SPIN THE WHEEL
+            </button>
+
+        </section>
+
+        <section class="result-section">
+
+            <h2>YOUR CHALLENGE</h2>
+
+            <h3 id="resultName">
+                Awaiting the Hunt...
+            </h3>
+
+            <p id="resultDescription">
+                Spin the wheel to reveal your challenge.
+            </p>
+
+        </section>
+
+        <div class="audio-controls">
+            <button id="muteButton">
+                Sound: ON
+            </button>
+        </div>
+
+    </main>
+
+    <audio
+        id="winSound"
+        src="Hunt-sound.m4a"
+        preload="auto">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
